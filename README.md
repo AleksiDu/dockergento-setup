@@ -6,7 +6,7 @@ ___
 
 1. Clone the repo:  
    ``` git clone https://github.com/developersalliance/magento2-dockergento.git ```
-2. Create links to the directory ```/usr/local/bin/```
+2. Create links to the directory ```/usr/local/bin/```:
     ``` sudo ln -s $(pwd)/magento2-dockergento/bin/dockergento /usr/local/bin/ ```
 3. Open a new terminal tab/window and check that dockergento works:
 

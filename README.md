@@ -6,7 +6,7 @@ ___
 
 1. Clone the repo:  
    ``` git clone https://github.com/developersalliance/magento2-dockergento.git ```
-2. Create links to the directory ```/usr/local/bin/```
+2. Create links to the directory ```/usr/local/bin/```:
     ``` sudo ln -s $(pwd)/magento2-dockergento/bin/dockergento /usr/local/bin/ ```
 3. Open a new terminal tab/window and check that dockergento works:
 
@@ -63,4 +63,14 @@ Inside bush run:
 php -d memory_limit=-1 /usr/local/bin/composer install \
 && php -d memory_limit=-1 bin/magento sampledata:deploy \
 && php -d memory_limit=-1 bin/magento se:up \
-&& php -d memory_limit=-1 bin/magento deploy:mode:set developer
+&& php -d memory_limit=-1 bin/magento deploy:mode:set developer 
+```
+
+## Start Application
+
+Setup hosts:
+
+```bash
+sudo vim /etc/hosts 
+ ## Add -> 127.0.0.1 <your-domain>
+dockergento start

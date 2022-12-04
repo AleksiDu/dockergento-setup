@@ -14,6 +14,11 @@ ___
     which dockergento  
     dockergento
     ```
+## Install Docker
+#### Linux
+```https://docs.docker.com/engine/install/ubuntu/```
+#### wsl
+```https://docs.docker.com/desktop/windows/wsl/```
 
 ## Create new project
 

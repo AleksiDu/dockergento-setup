@@ -75,7 +75,13 @@ php -d memory_limit=-1 /usr/local/bin/composer install \
 
 Setup hosts:
 
-```bash
+```
+bash
 sudo vim /etc/hosts 
  ## Add -> 127.0.0.1 <your-domain>
 dockergento start
+```
+```
+windows/System32/drivers/etc/hosts
+## Add -> 127.0.0.1 <your-domain>
+```
